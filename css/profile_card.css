@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -31,7 +33,7 @@ body {
   color: #333;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  margin-Top:2rem;
+  margin-Top:0.5rem;
 }
 
 /* Style the bio */
@@ -60,6 +62,12 @@ body {
 [data-testid="test-user-social-links"] li {
   display: inline-block;
   margin: 0 10px;
+  background-color: #f1f5ff;
+  border: 1px solid #d0e2ff;
+  border-radius: 8px;
+  padding: 10px 16px;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
 [data-testid="test-user-social-links"] a {
@@ -71,13 +79,16 @@ body {
 [data-testid="test-user-social-links"] h3 {
     color: #1a73e8;
   margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 2rem;
 
 }
 [data-testid="test-user-social-links"] a:hover {
   color: #0d47a1;
+  transform: translateY(-3px);
+  cursor: pointer;
 }
 
-/* Sections for hobbies and dislikes */
 [data-testid="test-user-hobbies"],
 [data-testid="test-user-dislikes"] {
   margin-top: 1.5rem;
@@ -103,7 +114,7 @@ body {
   border-radius: 6px;
   padding: 10px 16px;
   display: inline-block;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   font-weight: 500;
 }
 .section-container{
