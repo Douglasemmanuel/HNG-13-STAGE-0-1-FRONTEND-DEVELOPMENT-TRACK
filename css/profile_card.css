@@ -57,6 +57,10 @@ body {
 [data-testid="test-user-social-links"] ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:1rem;
 }
 
 [data-testid="test-user-social-links"] li {
