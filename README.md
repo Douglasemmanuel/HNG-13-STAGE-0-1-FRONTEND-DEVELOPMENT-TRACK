@@ -1,7 +1,4 @@
-That’s a great little **profile card project**, Douglas 💪 — perfect for a personal web component or portfolio starter.
-Here’s a **professional, well-formatted GitHub README.md** you can use directly in your repository.
 
----
 
 ## 🧑‍💻 Personal Profile Card
 
