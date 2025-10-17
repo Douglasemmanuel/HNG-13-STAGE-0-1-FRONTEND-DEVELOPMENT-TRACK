@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+};
+
+body {
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+[data-testid="test-profile-card"] {
+  padding: 1.5rem;
+}
+
+
+[data-testid="test-user-avatar"] {
+  border-radius: 50%;
+  border: 2px solid #1a73e8;
+  margin-bottom: 1rem;
+}
+[data-testid="test-user-time-tag"]{
+    margin-top: 1rem;
+    margin-Bottom:1rem;
+}
+
+[data-testid="test-user-name"] {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-Top:2rem;
+}
+
+/* Style the bio */
+[data-testid="test-user-bio"] {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Style the current time */
+[data-testid="test-user-time"] {
+  color: #1a73e8;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+[data-testid="test-user-social-links"]{
+     padding:1rem 2px;
+}
+
+[data-testid="test-user-social-links"] ul {
+  list-style: none;
+  padding: 0;
+}
+
+[data-testid="test-user-social-links"] li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+[data-testid="test-user-social-links"] a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+[data-testid="test-user-social-links"] h3 {
+    color: #1a73e8;
+  margin-bottom: 0.5rem;
+
+}
+[data-testid="test-user-social-links"] a:hover {
+  color: #0d47a1;
+}
+
+/* Sections for hobbies and dislikes */
+[data-testid="test-user-hobbies"],
+[data-testid="test-user-dislikes"] {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+[data-testid="test-user-hobbies"] h3,
+[data-testid="test-user-dislikes"] h3 {
+  color: #1a73e8;
+  margin-bottom: 0.5rem;
+}
+
+[data-testid="test-user-individual-hobbies"] li {
+  color: #333;
+  margin-left: 1.5rem;
+  line-height: 1.6;
+}
+[data-testid="test-user-time-tag"] {
+  font-size: 1rem;
+  color: #333;
+  background-color: #f1f5ff;
+  border: 1px solid #d0e2ff;
+  border-radius: 6px;
+  padding: 10px 16px;
+  display: inline-block;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+.section-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding:4px;
+}
+
+
+@media (min-width: 768px) {
+  [data-testid="test-profile-container"] {
+    display: flex;
+    align-items: center;
+  }
+
+  figure {
+    margin-right: 20px;
+  }
+}

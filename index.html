@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+
+
+    <link rel="stylesheet" href="./css/profile_card.css">
+    <Script src="./js/profile_card.js" defer></Script>
+</head>
+<body>
+    <div>
+        <article data-testid="test-profile-card">
+
+          <div data-testid="test-profile-container">
+              <figure>
+                <img
+                src="https://res.cloudinary.com/douglasemmanuel/image/upload/v1760651793/Douglas_ieltev.jpg"
+                alt="Profile Picture of Douglas Emmanuel"
+                data-testid="test-user-avatar"
+                style="height: 10rem;width:10rem;"
+                />
+            </figure>
+          <div>
+             <h2 data-testid="test-user-name">Douglas Emmanuel</h2>
+            <p data-testid="test-user-bio">
+                Frontend Developer passionate about Building Beautiful and Responsive Web Application.
+            </p>
+            <p data-testid="test-user-time-tag">Current Time : <span data-testid="test-user-time" ></span></p>
+           
+ 
+
+          </div>
+          </div>
+                 <nav data-testid="test-user-social-links">
+              <h3>Connect With Me</h3>
+  <ul>
+    <li>
+      <a href="https://x.com/_douglasemma21" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">
+        <i class="fa-brands fa-twitter"></i> Twitter
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/Douglasemmanuel" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/douglas-emmanuel-554452203" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+      </a>
+    </li>
+  </ul>
+</nav>
+             <div class="section-container">
+             <Section data-testid="test-user-hobbies">
+                <h3> Hobbies</h3>
+                 <ul data-testid="test-user-individual-hobbies">
+                        <li>Coding</li>
+                        <li>Exploring New Adventures</li>
+                        <li>Reading</li>
+                    </ul>
+            </Section>
+            <Section data-testid="test-user-dislikes">
+                <h3>Dislikes</h3>
+                 <ul data-testid="test-user-individual-hobbies">
+                        <li>Procrastination</li>
+                        <li>Bugs in Code</li>
+                        <li>Being Poor</li>
+                    </ul>
+            </Section>
+           </div>
+        </article>
+    </div>
+</body>
+</html>
