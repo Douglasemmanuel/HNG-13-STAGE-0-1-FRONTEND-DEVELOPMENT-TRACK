@@ -8,14 +8,14 @@ A **responsive personal profile card** built with **HTML**, **CSS**, and **Vanil
 
 ### 🚀 Demo
 
-👉 **[Live Preview (optional link)](https://yourusername.github.io/profile-card/)**
-*(Replace with your GitHub Pages or deployed URL)*
+👉 **[Live Preview (optional link)](https://app.netlify.com/projects/profilecard21/overview)**
+
 
 ---
 
 ### 🖼️ Preview
 
-![Profile Card Screenshot](https://res.cloudinary.com/douglasemmanuel/image/upload/v1760651793/Douglas_ieltev.jpg)
+
 
 <img src="./images/profilecard.jpeg" alt="All Todos" width="200"/>
 ---
