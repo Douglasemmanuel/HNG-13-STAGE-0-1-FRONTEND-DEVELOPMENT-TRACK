@@ -2,13 +2,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile Card</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/profile_card.css">
     <Script src="./js/profile_card.js" defer></Script>
 </head>
 <body>
-    <div>
+    <div class="profile-card">
         <article data-testid="test-profile-card">
 
           <div data-testid="test-profile-container">
@@ -26,11 +26,24 @@
                 Frontend Developer passionate about Building Beautiful and Responsive Web Application.
             </p>
             <p data-testid="test-user-time-tag">Current Time : <span data-testid="test-user-time" ></span></p>
-           
- 
-
           </div>
           </div>
+           <nav data-testid="test-user-details">
+           <ul>
+            <li data-testid="test-user-about">
+      <a href="./about.html" target="_blank" rel="noopener noreferrer" data-testid="test-user-about">
+       
+        <i class="fa fa-user" style="font-size:20px"></i> About
+      </a>
+    </li>
+    <li data-testid="test-user-contact">
+      <a href="./contact.html" target="_blank" rel="noopener noreferrer" data-testid="test-user-contact">
+       
+        <i class="fa fa-address-book" style="font-size:20px"></i> Contact
+      </a>
+    </li>
+           </ul>
+           </nav>
                  <nav data-testid="test-user-social-links">
               <h3>Connect With Me</h3>
   <ul>

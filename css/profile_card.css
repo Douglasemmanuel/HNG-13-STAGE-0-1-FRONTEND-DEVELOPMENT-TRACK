@@ -13,6 +13,14 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+.profile-card {
+  max-width: 95%;
+  margin: 4rem auto;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
 
 [data-testid="test-profile-card"] {
   padding: 1.5rem;
@@ -39,7 +47,7 @@ body {
 /* Style the bio */
 [data-testid="test-user-bio"] {
   color: #555;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-bottom: 1rem;
   flex-wrap: wrap;
 }
@@ -48,8 +56,45 @@ body {
 [data-testid="test-user-time"] {
   color: #1a73e8;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
+[data-testid="test-user-details"]{
+     padding:1rem 2px;
+}
+
+[data-testid="test-user-details"] ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:1rem;
+}
+
+[data-testid="test-user-details"] li {
+  display: inline-block;
+  margin: 0 1rem;
+  background-color: #f1f5ff;
+  border: 1px solid #d0e2ff;
+  border-radius: 1.4rem;
+  padding: 10px 1.2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+[data-testid="test-user-details"] a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+[data-testid="test-user-details"] a:hover {
+  color: #0d47a1;
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
 [data-testid="test-user-social-links"]{
      padding:1rem 2px;
 }
@@ -65,11 +110,11 @@ body {
 
 [data-testid="test-user-social-links"] li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 5px;
   background-color: #f1f5ff;
   border: 1px solid #d0e2ff;
   border-radius: 8px;
-  padding: 10px 16px;
+  padding: 10px 10px;
   text-align: center;
   transition: all 0.3s ease;
 }
@@ -127,6 +172,100 @@ body {
     gap: 2rem;
     padding:4px;
 }
+.back-button, button {
+    display: inline-block;
+  margin: 0 5px;
+  background-color: #f1f5ff;
+  border: 1px solid #d0e2ff;
+  border-radius: 1rem;
+  padding: 6px ;
+  color: black;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.back-button:hover, button:hover {
+    color: #0d47a1;
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+ /* About page styles */
+
+main[data-testid="test-about-page"] {
+  display: flex;
+  flex-direction: row; 
+  /* align-items: flex-start;  */
+  gap: 2rem;  
+  /* justify-content: center;  */
+  flex-wrap: wrap; 
+  margin: 1rem 0 ;
+}
+main[data-testid="test-about-page"] figure {
+  flex: 0 0 250px; 
+  text-align: center;
+}
+
+main[data-testid="test-about-page"] div {
+  flex: 1;
+}
+
+[data-testid="test-about-page-bio"]{
+ color: #333;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-Top:0.5rem;
+  font-weight: 550;
+  max-width: 100%;             
+  word-wrap: break-word;        
+  overflow-wrap: break-word;    
+  line-height: 1.5;             
+}
+[data-testid="test-about-page-name"]{
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  margin-Top:0.5rem;           
+}
+[data-testid="test-about-bio"] h2,
+[data-testid="test-about-goals"] h2,
+[data-testid="test-about-confidence"] h2,
+[data-testid="test-about-extra"] h2,
+[data-testid="test-about-future-note"] h2 {
+  color: #1a73e8;
+  margin: 0.5rem 0 ;
+  
+}
+[data-testid="test-about-bio"] section,
+[data-testid="test-about-goals"] section,
+[data-testid="test-about-confidence"] section,
+[data-testid="test-about-extra"] section,
+[data-testid="test-about-future-note"] section {
+  /* margin: 1rem 0; */
+  margin-top: 1rem;
+  
+}
+[data-testid="test-about-bio"] p,
+[data-testid="test-about-confidence"] p,
+[data-testid="test-about-extra"] p{
+ font-size: 1rem;
+ padding:0.2rem 0;
+}
+[data-testid="test-about-goals"] li,
+[data-testid="test-about-future-note"] li {
+ font-size: 1rem;
+  padding: 0.2rem 0 ;
+  
+}
+[data-testid="contact-user-tag"]{
+ font-size: 1.4rem;
+  text-align: center;
+}
+
+
+
+
+
+
 
 
 @media (min-width: 768px) {
@@ -138,4 +277,74 @@ body {
   figure {
     margin-right: 20px;
   }
+}
+
+/* Tablet (≥768px) */
+@media (min-width: 768px) {
+  .profile-card {
+    max-width: 600px;
+    padding: 1.5rem;
+  }
+ 
+  
+}
+
+/* Desktop (≥1024px) */
+@media (min-width: 1024px) {
+  .profile-card {
+    max-width: 950px;
+    padding: 2rem;
+  }
+  main[data-testid="test-about-page"] {
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+    main[data-testid="test-about-page"] figure {
+    flex: 0 0 250px; 
+  }
+  
+
+}
+
+/* 📱 Small Mobile (≤480px) */
+@media (max-width:480px) {
+  .profile-card {
+    padding: 0.8rem;
+    max-width: 350px;
+  }
+  [data-testid="test-user-details"] ul {
+ 
+  gap:0.5rem;
+}
+
+[data-testid="test-user-details"] li {
+  display: inline-block;
+  margin: 0 1rem;
+  background-color: #f1f5ff;
+  border: 1px solid #d0e2ff;
+  border-radius: 1.4rem;
+  padding: 10px 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+main[data-testid="test-about-page"] {
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+
+  main[data-testid="test-about-page"] figure img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  main[data-testid="test-about-page"] h2 {
+    font-size: 1.2rem;
+  }
+
+  main[data-testid="test-about-page"] p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
 }
