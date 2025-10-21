@@ -8,7 +8,7 @@ A **responsive personal profile card** built with **HTML**, **CSS**, and **Vanil
 
 ### 🚀 Demo
 
-👉 **[Live Preview (optional link)](https://profilecard21.netlify.app)**
+👉 **[Live Preview (optional link)](https://douglasprofilecard2121.netlify.app)**
 
 
 ---
