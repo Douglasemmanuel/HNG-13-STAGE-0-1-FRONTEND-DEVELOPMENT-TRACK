@@ -5,7 +5,8 @@
     <title>Contact</title>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/profile_card.css">
-    <Script src="./js/profile_card.js" defer></Script>
+    <script src="./js/contact.js" defer></script>
+
 </head>
 <body>
          <div class="profile-card">
@@ -27,9 +28,35 @@
             </p>
             </figure>
             <div>
-            <h2 data-testid="contact-user-tag">Contact Me</h2>
-            <form>
-
+            <form id="form" action="" novalidate>
+                 <h1 data-testid="contact-user-tag">Contact Me</h1>
+                 <div data-testid="test-contact-name">
+                    <label for="fullname">FullName</label>
+                    <input id="fullname" name="fullname" type="text">
+                    <div data-testid="test-contact-success"></div>
+                    <div data-testid="test-contact-error"></div>
+                 </div>
+                 <div data-testid="test-contact-email">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email">
+                   <div data-testid="test-contact-success"></div>
+                    <div data-testid="test-contact-error-email"></div>
+                    <div data-testid="test-contact-error"></div>
+                 </div>
+                 <div data-testid="test-contact-subject">
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text">
+                   <div data-testid="test-contact-success"></div>
+                    <div data-testid="test-contact-error"></div>
+                 </div>
+                  <div data-testid="test-contact-message">
+                    <label for="message">Message</label>
+                    <input id="message" name="message" type="text">
+                    <div data-testid="test-contact-success"></div>
+                    <div data-testid="test-contact-error"></div>
+                 </div>
+                 
+                 <button type="submit">Continue</button>
             </form>
                 
             </div>

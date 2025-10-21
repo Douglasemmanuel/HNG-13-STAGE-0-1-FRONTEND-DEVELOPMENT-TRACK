@@ -15,7 +15,7 @@ body {
 }
 .profile-card {
   max-width: 95%;
-  margin: 4rem auto;
+  margin: 2rem auto;
   padding: 1.5rem;
   border-radius: 12px;
   background-color: #fff;
@@ -261,11 +261,102 @@ main[data-testid="test-about-page"] div {
   text-align: center;
 }
 
+/* Contact styles */
+form#form {
+  padding:20px;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  font-size: 1.1rem;
+}
+ form#form button{
+ display: block;
+  margin: 1.5rem auto 0;
+  margin: 0 5px;
+  background-color: #f1f5ff;
+  border: 1px solid #d0e2ff;
+  border-radius: 1rem;
+  padding: 0.8rem 2rem ;
+  color: black;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+ }
+#form button :hover, button:hover {
+    color: #0d47a1;
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+[data-testid="test-contact-name"],
+[data-testid="test-contact-email"],
+[data-testid="test-contact-message"],
+[data-testid="test-contact-subject"]{
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+[data-testid="test-contact-name"] input,
+[data-testid="test-contact-email"] input,
+[data-testid="test-contact-message"] input,
+[data-testid="test-contact-subject"] input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 1rem;
+  padding: 12px;          
+  width: 100%;
+  box-sizing: border-box;  
+  height: 3rem;            
+}
 
 
 
+input:focus {
+  outline: none;
+}
+/* Input field red border when container has error */
+.error input {
+  border-color: #e74c3c;
+}
 
+/* Input field green border when container has success */
+.success input {
+  border-color: #2ecc71;
+}
 
+/* Hide error by default */
+[data-testid="test-contact-error"],
+[data-testid="test-contact-error-email"] {
+   display: none;
+  font-size: 0.9rem;
+  color: #e74c3c;
+  height: 12px;
+   padding: 0.4rem 0;
+}
+
+/* Show error message when error class is on container */
+.error [data-testid="test-contact-error"] {
+  display: block;
+}
+
+/* Hide success by default */
+[data-testid="test-contact-success"] {
+   display: none;
+  font-size: 0.9rem;
+  color: #2ecc71;
+    padding: 0.4rem 0;
+}
+
+/* Show success message when success class is on container */
+.success [data-testid="test-contact-success"] {
+   display: block;
+ 
+}
 
 
 @media (min-width: 768px) {

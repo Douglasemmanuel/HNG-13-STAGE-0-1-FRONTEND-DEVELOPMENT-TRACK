@@ -5,8 +5,6 @@ setInterval(()=>{
 }, 1000) ;
 
 
-
-
 function showCurrentTime() {
   const clock = document.querySelector('[data-testid="test-user-time"]');
   const now = new Date();
@@ -19,3 +17,9 @@ showCurrentTime();
 
 // Update every second
 setInterval(showCurrentTime, 1000);
+
+
+
+// the Contact me  function
+
+
